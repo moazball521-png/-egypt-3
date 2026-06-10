@@ -1,0 +1,57 @@
+.background {
+    position: fixed;
+    inset: 0;
+    background: url('36f0bd45-567f-42ba-b9ed-22aef782b367_16x9_1200x676.jpg') center/cover no-repeat;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+h1{
+color: peachpuff;
+justify-content: center;
+justify-items: center;
+align-items: center;
+align-content: center;
+display: flex;
+padding-top: 20%;
+font-size: 50px;
+
+
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+main > * {
+    animation: fadeUp 1s ease;
+}
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInBody {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, h2, h3 {
+    animation: slideDown 1s ease;
+}
